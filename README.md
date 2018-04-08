@@ -13,7 +13,8 @@ pip install requests
 
 本来我的打算是通过post来获取用户信息的，但发现这样做很容易被封。  </br>
 在考虑良久后，我觉得通过用户的手机端页面来获取用户信息，这样不容易被封。  </br>
-比如在手机上访问https://m.bilibili.com/space/2这个页面，可以获取用户名，性别，等级的信息。  </br>
+比如在手机上访问https://m.bilibili.com/space/2
+这个页面，可以获取用户名，性别，等级的信息。  </br>
 然后再通过api接口来获取用户的关注和粉丝数，如https://api.bilibili.com/x/relation/stat?jsonp=jsonp&vmid=2  </br>
 ```javascript
 {
@@ -33,12 +34,13 @@ pip install requests
 ## 数据获取
 B站对爬虫采取的是一旦发现，就封ip一天到5天不等。</br>
 但是如果使用代理，爬取总共数量3亿的用户信息需要花费非常多的时间。</br>
-我用过的最好的代理能一小时获取5万条用户信息，这样算下来需要6000小时才能爬完所有信息！  </br>
+我用过的最好的代理能一小时获取5万条用户信息，这样算下来需要**6000小时**才能爬完所有信息！  </br>
 在累计爬到一亿多时，我发现我的ip被封的很频繁，于是就不再爬下去了，因为这3亿用户有太多的僵尸用户了。  </br>
-比如![](information.png)  </br>
+比如:
+![](information.png)  </br>
 从图上可以看出这一面的用户基本都是僵尸用户，除了少数几个有等级或者关注的。  </br>
-我感觉用户信息对一家公司来说，可以算是核心资产了，我就不把自己爬到的全部数据放上来了，  </br>
-我把前109万用户的数据放上来，在data.db里。  </br>
+应该是16年B站开发注册后僵尸用户一下子就多起来了。  </br>
+我就不把自己爬到的全部数据放上来了,就前**109万**用户的数据放上来，在data.db里。  </br>
 
 
 
@@ -46,4 +48,4 @@ B站对爬虫采取的是一旦发现，就封ip一天到5天不等。</br>
 
 
 爬虫代码见 [bilibili-user-information-spider.py](code.py)</br>
-参考代码： [bili-user](https://github.com/airingursb/bilibili-user/)</br>
+参考资料： [bili-user](https://github.com/airingursb/bilibili-user/)</br>

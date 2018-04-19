@@ -1,5 +1,7 @@
 # bilibili-user-information-spider
 # B站3亿用户信息爬虫（mid号，昵称，性别，关注，粉丝，等级）
+  
+相关文章[B站视频信息爬虫](https://github.com/zhang0peter/bilibili-video-information-spider)  </br>
 之前写了B站视频信息的爬虫，然后就想到了爬取B站的用户信息。  </br>
 在2018年3月11号，B站的第3亿用户诞生了。  </br>
 
